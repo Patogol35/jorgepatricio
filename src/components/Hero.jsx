@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <Container sx={{ textAlign: "center", py: 8 }}>
       <Typography variant="h3" gutterBottom>
-        Hola, soy <strong>Andres</strong> 👋
+        Hola, soy <strong>Jorge</strong> 👋
       </Typography>
       <Typography variant="h6" color="text.secondary" gutterBottom>
         Desarrollador Web | Django | React
