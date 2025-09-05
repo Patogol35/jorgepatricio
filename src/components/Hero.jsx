@@ -1,5 +1,6 @@
 import { Container, Typography, Button, Box, Avatar, Stack } from "@mui/material";
 import { Github, Linkedin, Mail } from "lucide-react";
+import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
@@ -12,6 +13,7 @@ export default function Hero() {
       }}
     >
       <Container>
+        {/* Avatar animado */}
         <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ duration: 0.8 }}>
           <Avatar
             src="/assets/profile.png"
@@ -27,6 +29,7 @@ export default function Hero() {
           />
         </motion.div>
 
+        {/* Títulos */}
         <motion.div initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }}>
           <Typography variant="h2" fontWeight="bold" gutterBottom>
             ¡Hola! Soy <span style={{ color: "#ffeb3b" }}>Jorge</span> 👋
@@ -36,6 +39,7 @@ export default function Hero() {
           </Typography>
         </motion.div>
 
+        {/* Botones */}
         <Stack direction="row" justifyContent="center" spacing={2}>
           <Button
             variant="contained"
