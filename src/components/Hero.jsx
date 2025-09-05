@@ -1,6 +1,5 @@
 import { Container, Typography, Button, Box, Avatar, Stack } from "@mui/material";
 import { Github, Linkedin, Mail } from "lucide-react";
-import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
