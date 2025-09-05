@@ -2,18 +2,9 @@ import { Box, Typography } from "@mui/material";
 
 export default function Footer() {
   return (
-    <Box
-      component="footer"
-      sx={{
-        textAlign: "center",
-        py: 3,
-        mt: 4,
-        bgcolor: "primary.main",
-        color: "white",
-      }}
-    >
+    <Box sx={{ py: 3, textAlign: "center", bgcolor: "#1976d2", color: "#fff" }}>
       <Typography variant="body2">
-        © {new Date().getFullYear()} Jorge | Todos los derechos reservados
+        © {new Date().getFullYear()} Jorge Dev. Todos los derechos reservados.
       </Typography>
     </Box>
   );
