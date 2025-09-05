@@ -1,46 +1,47 @@
-
-import { Container, Typography, Button } from "@mui/material";
+import { Container, Typography, Button, Box } from "@mui/material";
 import { Github, Linkedin, Mail } from "lucide-react";
 
 export default function Hero() {
   return (
-    <Container sx={{ textAlign: "center", py: 8 }}>
-      <Typography variant="h3" gutterBottom>
-        Hola, soy <strong>Jorge</strong> 👋
+    <Container sx={{ textAlign: "center", py: 10 }}>
+      <Typography variant="h2" gutterBottom>
+        Hola, soy <span style={{ color: "#1976d2" }}>Jorge</span> 👋
       </Typography>
       <Typography variant="h6" color="text.secondary" gutterBottom>
         Desarrollador Web | Django | React
       </Typography>
 
-      <div style={{ marginTop: 20 }}>
+      <Box sx={{ mt: 4 }}>
         <Button
           variant="contained"
-          color="secondary"
-          startIcon={<Mail size={18} />}
+          size="large"
+          startIcon={<Mail size={20} />}
           href="mailto:andres@email.com"
-          sx={{ mx: 1 }}
+          sx={{ mx: 1, borderRadius: "50px" }}
         >
           Contáctame
         </Button>
         <Button
           variant="outlined"
-          startIcon={<Github size={18} />}
+          size="large"
+          startIcon={<Github size={20} />}
           href="https://github.com/tuusuario"
           target="_blank"
-          sx={{ mx: 1 }}
+          sx={{ mx: 1, borderRadius: "50px" }}
         >
           GitHub
         </Button>
         <Button
           variant="outlined"
-          startIcon={<Linkedin size={18} />}
+          size="large"
+          startIcon={<Linkedin size={20} />}
           href="https://linkedin.com/in/tuusuario"
           target="_blank"
-          sx={{ mx: 1 }}
+          sx={{ mx: 1, borderRadius: "50px" }}
         >
           LinkedIn
         </Button>
-      </div>
+      </Box>
     </Container>
   );
 }
