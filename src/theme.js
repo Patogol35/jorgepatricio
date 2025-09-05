@@ -3,20 +3,23 @@ import { createTheme } from "@mui/material/styles";
 const theme = createTheme({
   palette: {
     primary: {
-      main: "#1976d2", // Azul principal
+      main: "#1976d2",
     },
     secondary: {
-      main: "#424242", // Gris oscuro
+      main: "#ffeb3b",
+    },
+    background: {
+      default: "#f5f5f5",
+      paper: "#ffffff",
     },
   },
   typography: {
     fontFamily: "Poppins, Roboto, sans-serif",
-    h2: {
-      fontWeight: 700,
-    },
-    h4: {
-      fontWeight: 600,
-    },
+    h2: { fontWeight: 700 },
+    h4: { fontWeight: 600 },
+  },
+  shape: {
+    borderRadius: 16,
   },
 });
 
